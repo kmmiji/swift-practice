@@ -52,3 +52,5 @@ print("title: \(title)")
 // 다른식으로 표현할때 3
 var title2 : String = isDarkMode4 ? "다크모드 입니다" : "다크모드가 아닙니다"
 print(title2)
+
+//0506
