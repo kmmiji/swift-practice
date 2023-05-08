@@ -1,4 +1,6 @@
-import UIKit
+//: [Previous](@previous)
+
+import Foundation
 
 //enum = 타입을 나눈다 = 카테고리를 나눈다
 

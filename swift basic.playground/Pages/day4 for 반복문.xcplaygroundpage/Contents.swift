@@ -1,4 +1,6 @@
-import UIKit
+//: [Previous](@previous)
+
+import Foundation
 
 //레인지
 //0...5

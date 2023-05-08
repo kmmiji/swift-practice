@@ -1,4 +1,6 @@
-import UIKit
+//: [Previous](@previous)
+
+import Foundation
 
 //콜렉션 collection = 데이터를 모아둔 것
 // collection type= 배열 array, 셋 set , 딕셔너리 dictionarie , 튜플
