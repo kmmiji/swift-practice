@@ -24,14 +24,13 @@ struct HeadphoneSafetyView: View {
                     Toggle("큰 소리 줄이기", isOn: $reduceLoudness)
                 }
             }
-            
         }
-        
     }
 }
 
 struct ModalHeadAlarm: View {
     @State var showModal: Bool = false
+
     var body: some View {
         ZStack(alignment: .bottom){
             Text("iPhone이 청력을 보호하기 위해 헤드폰 오디오 레벨을 측정합니다. 권장되는 7일 한도를 초과하면 알림을 보내고 음량을 줄입니다.")
@@ -51,11 +50,20 @@ struct ModalHeadAlarm: View {
                 } // "더알아보기"의 frame이 설명텍스트 위에 있어서 눌리는 공간이 넓어짐...수정해야함
                 Spacer()
             }
-            
-            
         }
         .sheet(isPresented: $showModal) {
-            ModalHeadphoneAlarmView()
+            NavigationView {
+                    ModalHeadphoneAlarmView()
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            self.showModal = false
+                        } label: {
+                            Text("완료")
+                        }
+                    }
+                }
+            }
         }
     }
 }
