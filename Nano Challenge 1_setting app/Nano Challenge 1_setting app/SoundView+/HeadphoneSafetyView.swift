@@ -46,8 +46,7 @@ struct ModalHeadAlarm: View {
                         .padding(.bottom, 4)
 //                        .background(.yellow)
 //                        .opacity(0.5)
-                    
-                } // "더알아보기"의 frame이 설명텍스트 위에 있어서 눌리는 공간이 넓어짐...수정해야함
+                }
                 Spacer()
             }
         }
@@ -86,7 +85,20 @@ struct ModalReduceLoudness : View {
             } // "더알아보기"의 frame이 설명텍스트 위에 있어서 눌리는 공간이 넓어짐...수정해야함
         }
         .sheet(isPresented: $showloudness) {
-            ModalReduceLoudnessView()
+            NavigationView {
+                ModalReduceLoudnessView()
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button {
+                                self.showloudness = false
+                            } label: {
+                                Text("완료")
+                            }
+                        }
+                }
+                    .navigationTitle("청력 관련 기사")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
         }
     }
 }

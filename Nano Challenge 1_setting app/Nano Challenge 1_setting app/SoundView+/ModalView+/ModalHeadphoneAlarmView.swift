@@ -16,7 +16,7 @@ struct ModalHeadphoneAlarmView: View {
                 .padding(.vertical, 30)
             Text("이 알림은 사용자가 청각에 영향을 줄 만큼 오랜 시간동안 큰 소리로 헤드폰 오디오를 들었다는 것을 알립니다. 일부 지역에서는 규제 및 안전 기준에 의해 이 알림이 반드시 필요합니다.")
                 .frame(width: 350, alignment: .leading)
-                .font(.system(size: 16, weight: .light))
+                .font(.system(size: 16, weight: .regular))
                 .padding(.bottom)
             Text("7일 한도 알림")
                 .frame(width: 350, alignment: .leading)
@@ -29,7 +29,7 @@ struct ModalHeadphoneAlarmView: View {
                 Text("건강 앱에서 헤드폰 오디오 노출 기록을 확인하고 안전하게 청취하는 습관에 관하여 더 알아볼 수 있습니다.")
             }
             .frame(width: 350, alignment: .topLeading)
-            .font(.system(size: 16, weight: .light))
+            .font(.system(size: 16, weight: .regular))
 //            .background(.yellow)
             Spacer()
             

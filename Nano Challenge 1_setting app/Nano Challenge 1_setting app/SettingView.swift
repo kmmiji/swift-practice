@@ -18,7 +18,7 @@ struct SettingView: View {
                     //프로필
                     
                     HStack {
-                        Image("Jerry")
+                        Image("profileFace")
                             .resizable()
                             .frame(width: 60, height: 60)
                             .scaledToFit()
@@ -37,7 +37,6 @@ struct SettingView: View {
                             .padding(.horizontal)
                     }
                     .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.09)  //let screenSize 머시깽 이용한거임
-                    .background(.white)
                     .background(in: RoundedRectangle(cornerRadius: 15))
                     //리스트
                     List {
@@ -85,7 +84,7 @@ struct SettingView: View {
                  */
             }
             .navigationTitle("설정")
-            .background(Color(hex: "F2F2F7"))
+            .background(Color(hex: "F2F2F7")) // 설정뒤에 백그라운드 컬러
         }
         .background(Color(hex: "F2F2F7"))
         

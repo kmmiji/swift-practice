@@ -10,6 +10,7 @@
 		1A21EBF12A28F25C00A4F413 /* HeadphoneSafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A21EBF02A28F25C00A4F413 /* HeadphoneSafetyView.swift */; };
 		1A21EBF32A29C15B00A4F413 /* ModalHeadphoneAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A21EBF22A29C15B00A4F413 /* ModalHeadphoneAlarmView.swift */; };
 		1A21EBF52A29DFC200A4F413 /* ModalReduceLoudnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A21EBF42A29DFC200A4F413 /* ModalReduceLoudnessView.swift */; };
+		1AB590822A2DD29E007AC903 /* SellectBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB590812A2DD29E007AC903 /* SellectBellView.swift */; };
 		1AC87F6B2A276FCD00ED2761 /* Nano_Challenge_1_setting_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC87F6A2A276FCD00ED2761 /* Nano_Challenge_1_setting_appApp.swift */; };
 		1AC87F6D2A276FCD00ED2761 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC87F6C2A276FCD00ED2761 /* SettingView.swift */; };
 		1AC87F6F2A276FCF00ED2761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC87F6E2A276FCF00ED2761 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		1A21EBF02A28F25C00A4F413 /* HeadphoneSafetyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneSafetyView.swift; sourceTree = "<group>"; };
 		1A21EBF22A29C15B00A4F413 /* ModalHeadphoneAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalHeadphoneAlarmView.swift; sourceTree = "<group>"; };
 		1A21EBF42A29DFC200A4F413 /* ModalReduceLoudnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalReduceLoudnessView.swift; sourceTree = "<group>"; };
+		1AB590812A2DD29E007AC903 /* SellectBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellectBellView.swift; sourceTree = "<group>"; };
 		1AC87F672A276FCD00ED2761 /* Nano Challenge 1_setting app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano Challenge 1_setting app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC87F6A2A276FCD00ED2761 /* Nano_Challenge_1_setting_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano_Challenge_1_setting_appApp.swift; sourceTree = "<group>"; };
 		1AC87F6C2A276FCD00ED2761 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -86,11 +88,20 @@
 		1A21EBED2A28EA5000A4F413 /* SoundView+ */ = {
 			isa = PBXGroup;
 			children = (
+				1AB590832A2DD2E1007AC903 /* ModalView+ */,
 				1A21EBF02A28F25C00A4F413 /* HeadphoneSafetyView.swift */,
+				1AB590812A2DD29E007AC903 /* SellectBellView.swift */,
+			);
+			path = "SoundView+";
+			sourceTree = "<group>";
+		};
+		1AB590832A2DD2E1007AC903 /* ModalView+ */ = {
+			isa = PBXGroup;
+			children = (
 				1A21EBF22A29C15B00A4F413 /* ModalHeadphoneAlarmView.swift */,
 				1A21EBF42A29DFC200A4F413 /* ModalReduceLoudnessView.swift */,
 			);
-			path = "SoundView+";
+			path = "ModalView+";
 			sourceTree = "<group>";
 		};
 		1AC87F5E2A276FCD00ED2761 = {
@@ -291,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB590822A2DD29E007AC903 /* SellectBellView.swift in Sources */,
 				1AC87F6D2A276FCD00ED2761 /* SettingView.swift in Sources */,
 				1AC87F992A28827F00ED2761 /* Color+.swift in Sources */,
 				1AC87F972A2775C300ED2761 /* DisplayView.swift in Sources */,
@@ -457,6 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano Challenge 1_setting app/Preview Content\"";
+				DEVELOPMENT_TEAM = RQP4HNJAV2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -485,6 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano Challenge 1_setting app/Preview Content\"";
+				DEVELOPMENT_TEAM = RQP4HNJAV2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
