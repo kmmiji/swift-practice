@@ -27,14 +27,18 @@ struct SoundView: View {
                         }
                         Text("개인 맞춤형 공간 음향")
                     }
-                    Section("벨소리 및 알림 음향") {
+                    Section {
                         HStack{
                             Image(systemName: "speaker.fill")
                             Slider(value: $sliderAudio, in:-100...100, step: 1)
                             Image(systemName: "speaker.wave.3.fill")
                         }
                         Toggle("버튼을 사용하여 변경", isOn: $bellButton)
-                    }
+                    } header: {
+                        Text("벨소리 및 알림 음량")
+                    } footer: {
+                        Text("음량 버튼으로 벨소리 및 알림 음량을 조절할 수 없습니다.")
+                        }
                     Group {
                         Section("사운드 및 햅틱 패턴") {
                             NavigationLink("벨소리") {
@@ -96,7 +100,7 @@ struct SoundView: View {
                     Section {
                         Toggle("시스템 햅틱", isOn: $systemHaptic)
                     } footer: {
-                        Text("시스템 제어 및 상호 작용에 대한 햅틱을 재생합니다. ")
+                        Text("시스템 제어 및 상호 작용에 대한 햅틱을 재생합니다.")
                     }
                 }
                 .padding(.top, 10)
